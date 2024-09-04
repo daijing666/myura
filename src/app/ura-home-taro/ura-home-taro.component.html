@@ -1,0 +1,19 @@
+<ion-card style="box-shadow: none; border: 1px solid #ccc; border-radius: 10px;height: 50%;">
+  <ion-content>
+    <p style="font-size: 135%;">{{myOnlyResult}}</p>
+  </ion-content>
+</ion-card>
+ 
+  
+<!-- <div style="display: flex; flex-direction: column; justify-content: flex-end; height: 100%;"> -->
+  <ion-card color="rose">
+    <div class="wrapper">
+      <p style="font-weight: bold;font-size: 150%;">神と契約しよう！</p>
+      <div class="ion-activatable ripple-parent circle" (mousedown)="startTimer()" (mouseup)="stopTimer()"
+      (touchstart)="startTimer()" (touchend)="stopTimer()">
+        <ion-icon size="large" name="finger-print-outline"></ion-icon>
+        <ion-ripple-effect type="unbounded"></ion-ripple-effect>
+      </div>
+    </div>
+  </ion-card>
+<!-- </div> -->

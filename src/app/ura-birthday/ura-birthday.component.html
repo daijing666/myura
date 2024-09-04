@@ -1,0 +1,22 @@
+
+<ion-card>
+  <ion-item lines="full">
+    <ion-icon name="accessibility-outline" slot="start"></ion-icon>
+    <ion-label>ニックネームを入力してください～</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-input placeholder="ダイジン" [(ngModel)]="name"></ion-input>
+  </ion-item>
+</ion-card>
+
+<ion-card class="card-centered">
+  <ion-datetime #myDatetime>
+    <span style="font-size: 150%;font-weight: bold;" slot="title" color="rose">生年月日と出生時刻</span>
+  </ion-datetime>
+</ion-card>
+
+
+<ion-card>  
+  <ion-button color="rose" expand="block" (click)="next()">次へ</ion-button>
+</ion-card>
+

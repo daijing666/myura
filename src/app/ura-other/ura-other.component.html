@@ -1,0 +1,72 @@
+<div class="container">
+  <ion-list>
+
+
+    <ion-card>
+      <ion-item lines="full">
+        <ion-icon name="transgender-outline" slot="start"></ion-icon>
+        <ion-label>性別を選択してください～</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-select (ionChange)="handleSex($event)" interface="action-sheet" placeholder="性別">
+          <ion-select-option value="くん">男性</ion-select-option>
+          <ion-select-option value="ちゃん">女性</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-card>
+
+    <ion-card>
+      <ion-item lines="full">
+        <ion-icon name="language-outline" slot="start"></ion-icon>
+        <ion-label>言語を選択してください～</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-select (ionChange)="handleLanguage($event)" interface="action-sheet" placeholder="言語">
+          <ion-select-option value="日语">日本語</ion-select-option>
+          <ion-select-option value="汉语">中国語</ion-select-option>
+          <ion-select-option value="英语">英語</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-card>
+
+
+    <ion-card>
+      <ion-item lines="full">
+        <ion-icon name="cash-outline" slot="start"></ion-icon>
+        <ion-label>好きなカードをを選択してください～</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-select (ionChange)="handleAnimal($event)" interface="action-sheet" placeholder="カード">
+          <ion-select-option value="死神牌">死神カード</ion-select-option>
+          <ion-select-option value="恋人牌">恋人カード</ion-select-option>
+          <ion-select-option value="魔術師牌">魔術師カード</ion-select-option>
+          <ion-select-option value="皇帝牌">皇帝カード</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-card>
+
+    <ion-card>
+      <ion-item lines="full">
+        <ion-icon name="earth-outline" slot="start"></ion-icon>
+        <ion-label>出身地を選択してください～</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-select (ionChange)="handlePositionSN($event)" interface="action-sheet" placeholder="北南">
+          <ion-select-option value="北">北半球</ion-select-option>
+          <ion-select-option value="南">南半球</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-select (ionChange)="handlePositionEW($event)" interface="action-sheet" placeholder="東西">
+          <ion-select-option value="東">東半球</ion-select-option>
+          <ion-select-option value="西">西半球</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-card>
+
+
+  </ion-list>
+</div>
+<ion-card>
+  <ion-button color="rose" expand="block"  (click)="next()">次へ</ion-button>
+</ion-card>
