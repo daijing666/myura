@@ -2,11 +2,19 @@ nvm→nodejs+npm
 npm i ionic
 
 ionic start myApp blank --type=angular --no-deps
-cd myApp
+1.cd myApp
 package.json
 angular.json
-npm install --legacy-peer-deps
+2.npm install --legacy-peer-deps
 
 firewall
-npm start -- --host=0.0.0.0 --port=4200 --disable-host-check
+3.npm start -- --host=0.0.0.0 --port=4211 --disable-host-check
+
+
+nginx
+4.ionic build --prod →www
+5.
+
+
+
 
